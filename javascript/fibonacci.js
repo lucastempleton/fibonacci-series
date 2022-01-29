@@ -1,5 +1,15 @@
 function fibonacci(num) {
   // type your code here
+  let fibonacciSet = new Array(25);
+  for (let i = 0; i<25; i++){
+    let x;
+    if(i === 0 ){
+      fibonacciSet.push(i)
+      x = i
+    }else{fibonacciSet.push(i+x); x = i}
+  }
+  console.log(fibonacciSet[num])
+  return fibonacciSet[num]
 }
 
 if (require.main === module) {
